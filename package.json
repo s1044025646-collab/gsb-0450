@@ -1,0 +1,17 @@
+{
+  "name": "srtf-scheduler",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Offline single-core SRTF preemptive scheduling backend (API + CLI)",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/scheduler.test.js",
+    "start": "npm run build --silent && node dist/src/server.js",
+    "cli": "npm run build --silent && node dist/src/cli.js",
+    "demo": "npm run build --silent && node dist/src/cli.js demo"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^5.9.0"
+  }
+}
