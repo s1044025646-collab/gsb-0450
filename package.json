@@ -1,0 +1,15 @@
+{
+  "name": "srtf-scheduler",
+  "version": "1.0.0",
+  "private": true,
+  "description": "单核 SRTF 抢占调度与完成时刻核验后端（API + CLI）",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/cli.js serve",
+    "cli": "node dist/cli.js",
+    "demo": "node dist/cli.js demo",
+    "test": "npm run build && tsc -p tsconfig.test.json && node --test \"dist-test/test/*.test.js\""
+  },
+  "license": "MIT"
+}
